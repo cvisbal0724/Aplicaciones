@@ -77,7 +77,7 @@ return [
 
 		'sqlsrv' => [
 			'driver'   => 'sqlsrv',
-			'host'     => 'CARLOSVISBALR,2014\SQLEXPRESS2014',
+			'host'     => 'CARLOSVISBAL\SQLEXPRESS2014',//'CARLOSVISBALR,2014\SQLEXPRESS2014',
 			'database' => 'sinin',
 			'username' => 'sa',
 			'password' => '12345',
