@@ -17,6 +17,7 @@ class MenuController extends Controller {
 		->where('modulo.id_aplicacion',2)->get();
 		
 		return $menu;
+		//
 
 	}
 
