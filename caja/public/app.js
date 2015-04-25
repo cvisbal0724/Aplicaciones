@@ -22,6 +22,11 @@ App.config(function($urlRouterProvider, $stateProvider) {
       url: "/legalizaciones",              
       template: "Legalizaciones", 
       //controller: 'HomeController'
+     })
+    .state('home.beneficiario', {
+      url: "/beneficiario",              
+      templateUrl: "beneficiario/beneficiario", 
+      //controller: 'HomeController'
      });
      
 });

@@ -19,6 +19,9 @@
 Route::get('/', function(){
 	return view('inicio/index');
 });
+Route::get('beneficiario/beneficiario', function(){
+	return view('beneficiario/beneficiario');
+});
 
 /*Vista*/
 Route::get('/inicio/login', function(){

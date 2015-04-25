@@ -15,7 +15,6 @@ class Menu extends Model {
 
 		return $this->belongsTo('Modulo', 'id_modulo','id');
 
-
 	}
 
 }

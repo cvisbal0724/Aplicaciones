@@ -13,7 +13,8 @@ class UsuarioController extends Controller {
 	public function Loguear(Request $request){
 
 
-		$credeciales=array('usuario'=>$request->input('usuario'),'password'=>$request->input('clave'));
+		$credeciales=array('usuario'=>$request->input('usuario'),
+			'password'=>$request->input('clave'));
 		$result=DB::select('EXEC validar_acceso :usuario,:password',$credeciales);		
 		
 		if ($result[0]->id > 0) {
@@ -29,13 +30,13 @@ class UsuarioController extends Controller {
 	public function Desloguear(){
 
 	  Session::flush();
-	  return array('id'=>0,'nombre'=>'');		
+	  return array('id'=>0,'nombre'=>'','_token'=>'');		
 
 	}
 
 	public function VerificarLogueo(){
 
-		if (Session::has('id_usuario')) {
+		if (Session::has('id_usuario')){
 			return array('id'=>Session::get('id_usuario'),'nombre'=>'','_token'=>csrf_token());
 		}else{
 			return array('id'=>0,'nombre'=>'','_token'=>'');
