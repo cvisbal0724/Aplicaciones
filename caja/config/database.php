@@ -77,17 +77,10 @@ return [
 
 		'sqlsrv' => [
 			'driver'   => 'sqlsrv',
-<<<<<<< HEAD
 			'host'     => env('DB_HOST', 'localhost'),
 			'database' => env('DB_DATABASE', 'forge'),
 			'username' => env('DB_USERNAME', 'forge'),
 			'password' => env('DB_PASSWORD', ''),
-=======
-			'host'     => 'CARLOSVISBAL\SQLEXPRESS2014',//'CARLOSVISBALR,2014\SQLEXPRESS2014',
-			'database' => 'sinin',
-			'username' => 'sa',
-			'password' => '12345',
->>>>>>> origin/master
 			'prefix'   => '',
 		],
 
