@@ -1,38 +1,4 @@
-<style type="text/css">
-body{
-	background-color: white !important;
-}
 
-.slide {
-    -webkit-transition: -webkit-transform .7s ease-in-out;
-    -moz-transition: -moz-transform .7s ease-in-out;
-    -o-transition: -o-transform .7s ease-in-out;
-    transition: transform .7s ease-in-out;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-
-.slide.ng-enter {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-}
-
-.slide.ng-enter.ng-enter-active, .slide.ng-leave {
-    position: absolute;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-
-.slide.ng-leave.ng-leave-active {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-}
-
-</style>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/sb-admin.css" rel="stylesheet">
-<link href="css/plugins/morris.css" rel="stylesheet">
-<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
  <div id="wrapper">
 

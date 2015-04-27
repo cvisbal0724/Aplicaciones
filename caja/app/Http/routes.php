@@ -51,3 +51,6 @@ Route::get('usuario/desloguear', 'UsuarioController@Desloguear');
 Route::post('menu/consultarmenu', 'MenuController@ConsultarMenu');
 /*Fin menu*/
 
+/*Beneficiario*/
+Route::post('beneficiario/registrar','BeneficiarioController@Registrar');
+/*Fin beneficiario*/

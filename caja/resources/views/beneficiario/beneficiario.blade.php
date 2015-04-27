@@ -20,29 +20,29 @@
              <div class="col-lg-6">
                  <div class="form-group">
                             <label>Nombre:</label>
-                                <input class="form-control" required="" >
+                            <input class="form-control" required="" ng-model='beneficiarioVO.nombre'>
                             <p class="help-block">(*)Digite el nombre del beneficiario.</p>
                         </div>
 
                    <div class="form-group">
                             <label>Identificación:</label>
-                                <input class="form-control" required="">
+                            <input class="form-control" required="" ng-model='beneficiarioVO.identificacion'>
                             <p class="help-block">(*)Digite la identificacióm del beneficiario.</p>
                         </div>
                    <div class="form-group">
                             <label>Dirección:</label>
-                                <input class="form-control" required="">
+                                <input class="form-control" required="" ng-model='beneficiarioVO.direccion'>
                             
                         </div>
                     <div class="form-group">
                             <label>Telfono:</label>
-                                <input class="form-control" required="">
+                                <input class="form-control" required="" ng-model='beneficiarioVO.telefono'>
                             
                         </div> 
 
                  <div class="panel-body">
                                 <div class="row"><!--INICIO FILA-->
-                                    <button class="btn btn-primary " type="button" id="btnCrearConductor" >Registrar</button>
+                                    <button class="btn btn-primary " type="button" id="btnCrearConductor" ng-click='registrar()'>Registrar</button>
                                 </div><!--FINAL FILA-->
                         </div>             
              </div>

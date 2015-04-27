@@ -26,7 +26,7 @@ App.config(function($urlRouterProvider, $stateProvider) {
     .state('home.beneficiario', {
       url: "/beneficiario",              
       templateUrl: "beneficiario/beneficiario", 
-      //controller: 'HomeController'
+      controller: 'BeneficiarioController'
      });
      
 });
