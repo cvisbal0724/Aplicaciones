@@ -88,22 +88,7 @@ body{
 
         <div id="page-wrapper">
 			<div class="container-fluid">
-
-				 <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Legalizaciones <small>Movimientos de caja</small>
-                        </h1>
-                        <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-dashboard"></i> Dashboard
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <!-- /.row -->
-
+		     
                 <!--Aqui angular nos va a renderizar las vitas deseamos ver-->
                 <ui-view class='slide' ></ui-view>
 

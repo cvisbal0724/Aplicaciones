@@ -1,6 +1,6 @@
 'use strict';
 
-var App = angular.module('App',  ['ui.router','ngRoute', 'confControllers']);
+var App = angular.module('App',  ['ui.router','ngRoute','confControllers']);
 var confControllers = angular.module('confControllers', []);
 
 App.config(function($urlRouterProvider, $stateProvider) {
