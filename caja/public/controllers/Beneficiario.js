@@ -1,6 +1,7 @@
 confControllers.controller('BeneficiarioController', function ($scope,$location,authUsuario,SessionService,SessionSet,$state,$http) {
 
 	$scope.beneficiarioVO={id:'',nombre:'nombre', identificacion:'', direccion:'', telefono:'',_token:authUsuario.token()};
+	$scope.ListaBeneficiario=[];
 
 	$scope.registrar=function(){
 
@@ -12,6 +13,16 @@ confControllers.controller('BeneficiarioController', function ($scope,$location,
 	 	}else{
 	 		alert('error');   
 	 	}
+	 	
+      });
+
+	}
+
+	$scope.consultar=function(){
+
+	$http.post("beneficiario/consultar",{_token:authUsuario.token()}).success(function(data, status, headers, config) {
+
+	 	$scope.ListaBeneficiario=data;
 	 	
       });
 

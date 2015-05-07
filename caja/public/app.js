@@ -27,6 +27,11 @@ App.config(function($urlRouterProvider, $stateProvider) {
       url: "/beneficiario",              
       templateUrl: "beneficiario/beneficiario", 
       controller: 'BeneficiarioController'
+     })
+    .state('home.consultar_beneficiario', {
+      url: "/consultar-beneficiario",              
+      templateUrl: "beneficiario/consultar",
+      controller: 'BeneficiarioController'
      });
      
 });

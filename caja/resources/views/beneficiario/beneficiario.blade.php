@@ -5,7 +5,7 @@
          <ol class="breadcrumb">
              <li><a ui-sref="home"><i class="icon-dashboard"></i> Inicio</a></li>
              <li class="active"><i class="icon-dashboard"></i> Registrar</li>
-            <li><a href=""><i class="icon-dashboard"></i> Consultar</a></li>
+            <li><a ui-sref='home.consultar_beneficiario'><i class="icon-dashboard"></i> Consultar</a></li>
          </ol>
      </div>
  </div>                

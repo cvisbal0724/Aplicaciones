@@ -21,4 +21,10 @@ class BeneficiarioController extends Controller {
 
 	}
 
+	public function Consultar(){
+
+		return Beneficiario::all();
+
+	}
+
 }

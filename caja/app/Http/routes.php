@@ -22,7 +22,9 @@ Route::get('/', function(){
 Route::get('beneficiario/beneficiario', function(){
 	return view('beneficiario/beneficiario');
 });
-
+Route::get('beneficiario/consultar', function(){
+	return view('beneficiario/consultar');
+});
 /*Vista*/
 Route::get('/inicio/login', function(){
 	return view('inicio/login');
@@ -53,4 +55,28 @@ Route::post('menu/consultarmenu', 'MenuController@ConsultarMenu');
 
 /*Beneficiario*/
 Route::post('beneficiario/registrar','BeneficiarioController@Registrar');
+Route::post('beneficiario/consultar', 'BeneficiarioController@Consultar');
 /*Fin beneficiario*/
+
+
+//http://caja.com:84/posts-json?page=2
+Route::get('posts-json', 'PersonaController@json');
+
+Route::get('test',function(){
+
+	return view('test');
+
+});
+
+use App\models\Persona;
+Route::post('test2',function(){
+
+	return Persona::paginate(5);
+
+});
+
+Route::get('test2',function(){
+
+	//return Persona::paginate(5);
+
+});
